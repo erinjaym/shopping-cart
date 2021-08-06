@@ -18,13 +18,63 @@ color: white;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-min-height: 5vh;
+min-height: 20vh;
 font-size: 1em;
 }
 
-nav-links{
+
+a{
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  }
+
+
+a:visited{
+color: white;
 width: 50%;
 display: flex;
 justify-content: space-around;
 list-style: none;
+}
+
+
+.homepage {
+background-color: red;
+height: 100vh;
+}
+
+.shop {
+align-items: center;
+background-color: pink;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-content: center;
+padding-left: 10vw;
+padding-right: 10vw;
+height: 100vh;
+}
+
+.item {
+border: red solid 2px;
+
+}
+
+.cart {
+background-color: salmon;
+height: 100vh;
+padding-right: 10vw;
+padding-left: 10vw;
+}
+
+.footer {
+align-items: center;
+background-color: black;
+color: white;
+display: grid;
+justify-content: center;
+min-height: 10vh;
 }
