@@ -10,41 +10,41 @@ const Shop = (props) => {
     return (
         <div id="shop" className="shop">
             <div className="item">
-                <img className="item-image" src={RedDaruma} /> 
+                <img className="item-image" alt="red daruma doll" src={RedDaruma} /> 
                 <div id="description"> Red Daruma for luck!</div>
                 <div id="price"> $12.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
             <div className="item">
-                <img className="item-image" src={BlackDaruma} /> 
+                <img className="item-image"  alt="black daruma doll" src={BlackDaruma} /> 
                 <div id="description"> Black Daruma!</div>
                 <div id="price"> $15.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
-                <img className="item-image" src={YellowDaruma} /> 
+                <img className="item-image"  alt="yellow daruma doll" src={YellowDaruma} /> 
                 <div id="description"> Yellow Daruma!</div>
                 <div id="price"> $15.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
-                <img className="item-image" src={PurpleDaruma} /> 
+                <img className="item-image"  alt="purple daruma doll" src={PurpleDaruma} /> 
                 <div id="description"> Purple Daruma!</div>
                 <div id="price"> $18.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
-                <img className="item-image" src={PinkDaruma} /> 
+                <img className="item-image"  alt="pink daruma doll" src={PinkDaruma} /> 
                 <div id="description"> Pink Daruma!</div>
                 <div id="price"> $13.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
-                <img className="item-image" src={GoldDaruma} /> 
+                <img className="item-image"  alt="gold daruma doll" src={GoldDaruma} /> 
                 <div id="description"> Gold Daruma!</div>
                 <div id="price"> $19.99</div>
                 <button className="item-button">Add To cart</button>

@@ -50,6 +50,7 @@ list-style: none;
 .homepage {
 background-color: #fffffd;
 background-image: url(./images/background.jpg);
+background-position: center;
 background-size: cover;
 display: flex;
 justify-content: flex-end;
@@ -64,7 +65,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 height: 100vh;
 justify-content: center;
-padding-bottom: 5vh;
+padding-bottom: 10vh;
 padding-top: 5vh;
 padding-left: 10vw;
 padding-right: 10vw;
@@ -152,3 +153,4 @@ width: 200px;
   font-size: 1.5em;
   text-shadow: skyblue 3px 3px 5px;
   }
+  
