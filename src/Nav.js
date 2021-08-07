@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 const Nav = () => {
     return (
         <nav>
-            <div id="logo">The Daruma Store</div>
+            <div id="logo" className="logo">The Daruma Store</div>
             <ul id="links" className="nav-links">
                 <Link to="/">
-                    <li>Home</li>
+                    <li className="nav-link">Home</li>
                 </Link>
                 <Link to="/Shop">
-                    <li>Shop</li>
+                    <li className="nav-link">Shop</li>
                 </Link>
                 <Link to="/Cart">
-                    <li>Cart</li>
+                    <li className="nav-link">Cart</li>
                 </Link>
             </ul>
         </nav>

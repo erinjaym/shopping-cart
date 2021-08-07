@@ -13,7 +13,7 @@ code {
 }
 
 nav {
-  align-items: center;
+align-items: center;
 background-color: black;
 color: white;
 display: flex;
@@ -27,7 +27,10 @@ font-weight: bold;
 .nav-links{
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+}
+
+.nav-link{
+padding-right: 20px;
 }
 
 
@@ -55,30 +58,43 @@ height: 100vh;
 
 .shop {
 align-items: center;
-background-color: white;
+background-color: rgb(208, 221, 226);
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
+height: 100vh;
 justify-content: center;
+padding-bottom: 5vh;
+padding-top: 5vh;
 padding-left: 10vw;
 padding-right: 10vw;
-height: 100vh;
 }
 
 .item {
 align-items: center;
 display: flex;
 flex-direction: column;
+font-weight: bold;
 }
 
 .item-button {
-color:teal;
-background-color: yellowgreen;
-width: 100px;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.item-button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .cart {
-background-color: salmon;
+background-color: rgb(208, 221, 226);
 height: 100vh;
 padding-right: 10vw;
 padding-left: 10vw;
@@ -100,27 +116,39 @@ min-height: 5vh;
   width: 300px;
 }
 
-.shop-button {
-background-color: black;
-color: white;
-font-size: 2em;
-display: inline-block;
-justify-content: center;
-text-align: center;
-position: absolute;
-top: 40vh;
-left: 60vw;
-width: 200px;
-height: 50px;
+
+.item-image:hover {
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
 }
 
-.shop-button:hover {
+.shop-now-button {
+background-color: black;
+color: white;
+display: inline-block;
+font-size: 2em;
+height: 50px;
+left: 60vw;
+position: absolute;
+top: 40vh;
+text-align: center;
+width: 200px;
+}
+
+.shop-now-button:hover {
   background-color: white;
   border: 2px black solid;
   color: black;
+  display: inline-block;
   font-size: 2em;
   font-weight: bold;
-  display: inline-block;
   text-align: center;
   width: 200px;
+  }
+
+  .logo{
+  font-size: 1.5em;
+  text-shadow: skyblue 3px 3px 5px;
   }
