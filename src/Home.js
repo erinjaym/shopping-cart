@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div id="homepage" className="homepage">
-                <div>Big amazing Design!</div>
+        <div id="homepage" className="homepage" >
+            <Link to="/Shop" className="shop-button">Shop Now</Link>
         </div>
     );
 };

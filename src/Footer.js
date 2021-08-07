@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div id="footer" className="footer">
-            Footer Stuff! 
+            The Daruma Store is not real. But Daruma dolls are! Google them. ;p 
         </div>
     );
 };

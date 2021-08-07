@@ -9,8 +9,6 @@ import Footer from "./Footer";
 
 function App() {
 
-
-
   return (
     <BrowserRouter>
     <div id="mainpage">
