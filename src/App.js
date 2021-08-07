@@ -6,8 +6,11 @@ import Cart from "./Cart";
 import Home from "./Home";
 import Shop from "./Shop"; 
 import Footer from "./Footer";
+import {useState, useEffect } from "react";
 
 function App() {
+
+  const [cartItems, setCartItems] = useState (0);
 
   return (
     <BrowserRouter>

@@ -12,35 +12,41 @@ const Shop = (props) => {
             <div className="item">
                 <img className="item-image" src={RedDaruma} /> 
                 <div id="description"> Red Daruma for luck!</div>
+                <div id="price"> $12.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
             <div className="item">
                 <img className="item-image" src={BlackDaruma} /> 
                 <div id="description"> Black Daruma!</div>
+                <div id="price"> $15.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image" src={YellowDaruma} /> 
                 <div id="description"> Yellow Daruma!</div>
+                <div id="price"> $15.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image" src={PurpleDaruma} /> 
                 <div id="description"> Purple Daruma!</div>
+                <div id="price"> $18.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image" src={PinkDaruma} /> 
                 <div id="description"> Pink Daruma!</div>
+                <div id="price"> $13.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image" src={GoldDaruma} /> 
                 <div id="description"> Gold Daruma!</div>
+                <div id="price"> $19.99</div>
                 <button className="item-button">Add To cart</button>
             </div>
         </div>
