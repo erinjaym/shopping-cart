@@ -33,6 +33,11 @@ flex-direction: row;
 padding-right: 20px;
 }
 
+.nav-link:hover{
+  padding-right: 20px;
+  text-decoration: underline;
+  }
+
 
 a{
   color: white;
@@ -95,7 +100,8 @@ font-weight: bold;
 }
 
 .cart {
-background-color: rgb(208, 221, 226);
+background-color: black;
+color: white;
 height: 100vh;
 padding-right: 10vw;
 padding-left: 10vw;

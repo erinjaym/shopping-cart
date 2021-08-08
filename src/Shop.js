@@ -13,7 +13,7 @@ const Shop = (props) => {
                 <img className="item-image" alt="red daruma doll" src={RedDaruma} /> 
                 <div id="description"> Red Daruma for luck!</div>
                 <div id="price"> $12.99</div>
-                <button className="item-button">Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Red Daruma")} >Add To cart</button>
             </div>
             <div className="item">
                 <img className="item-image"  alt="black daruma doll" src={BlackDaruma} /> 
