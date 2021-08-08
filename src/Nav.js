@@ -15,7 +15,7 @@ const Nav = (props) => {
                     <li className="nav-link">Shop</li>
                 </Link>
                 <Link to="/Cart">
-                    <li className="nav-link"><img  alt="shopping cart" src={ShoppingCart} ></img></li>
+                    <li className="nav-link"><img  alt="shopping cart" src={ShoppingCart} ></img>{props.count}</li>
                 </Link>
 
             </ul>
