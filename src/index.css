@@ -195,3 +195,9 @@ width: 200px;
     border-left: 1px solid #009879;
     border-right: 1px solid #009879;
   }
+
+  .total {
+  background-color: #009879;
+  color: white;
+  font-weight: bold;
+  }
