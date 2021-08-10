@@ -1,4 +1,3 @@
-import react from "react";
 import { useEffect } from "react";
 
 const Table = (props) => { 
@@ -22,11 +21,11 @@ useEffect (() => {
             return (
             <tr key={index}>
                 <td>{item.name}</td>
-                <td><img className="cart-thumbnail" src={item.picture} /> </td>
+                <td><img alt="product-thumbnail" className="cart-thumbnail" src={item.picture} /> </td>
                 <td>
-                  <button onClick={() => props.add(item.name)}>+</button>
+                  <button className="quantity-button" onClick={() => props.add(item.name)}>+</button>
                   {item.quantity}
-                  <button onClick={() => props.subtract(item.name)}>-</button>
+                  <button className="quantity-button" onClick={() => props.subtract(item.name)}>-</button>
                 </td>
                 <td>{item.price}</td>
             </tr>

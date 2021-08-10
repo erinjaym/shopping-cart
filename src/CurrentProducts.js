@@ -1,4 +1,3 @@
-import React from "react";
 import RedDaruma from "./images/reddaruma.jpg";
 import BlackDaruma from "./images/blackdaruma.png";
 import YellowDaruma from "./images/yellowdaruma.png";

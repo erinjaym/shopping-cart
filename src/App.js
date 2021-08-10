@@ -13,12 +13,6 @@ function App() {
 
   const [cartItems, setCartItems] = useState ( productList() );
   const [cartCount, setCartCount] = useState (0);
-  const [total, setTotal] = useState (0);
-
-  const addToCart = (productName) => {
-    findItemAndAddQuantity(productName);
-    addCartCount ();
-  };
 
   function findItemAndAddQuantity (productName) {
       for (let x = 0; x < cartItems.length; x++ ){
@@ -27,7 +21,6 @@ function App() {
           itemReplacement.quantity = itemReplacement.quantity + 1;
           cartItems[x] = itemReplacement;
          setCartItems( cartItems );
-         console.log(cartItems);
         }else {
         }
     }
@@ -50,6 +43,16 @@ function App() {
   }
 }
 
+const addToCart = (productName) => {
+  findItemAndAddQuantity(productName);
+  addCartCount ();
+};
+
+const addCartCount = () => {
+  setCartCount ( cartCount + 1);
+}
+
+
   const subtractFromCart = (productName) => {
     findItemAndSubtractQuantity(productName);
     subtractCartCount ();
@@ -59,46 +62,18 @@ function App() {
     setCartCount ( cartCount - 1);
   }
 
-  const addCartCount = () => {
-    setCartCount ( cartCount + 1);
-  }
-
-  const decreaseCartCount = () => {
-    setCartCount ( cartCount - 1) ;
-    return true;
+  const buyAlert = () => {
+    alert("Sorry! Only Japan has these in stock");
   }
 
 
-  function totalItems () {
+  function totalItems () { //need to modfy to round total to two digits. 
     let fullCart = cartItems; 
     let runningTotal = 0; 
-    console.log("are you running");
     for (let item = 0; item < fullCart.length; item++){
       runningTotal += (fullCart[item].quantity) * (fullCart[item].price);
-      console.log(runningTotal);
     }
     return runningTotal;
-  }
-/*
-  function summarizeCart () {
-    console.log(cartItems);
-    let red = cartItems.filter(item =>  item.name == "Red Daruma");
-    let black = cartItems.filter(item => item.name == "Black Daruma");
-    let yellow = cartItems.filter(item => item.name === "Yellow Daruma");
-    let purple = cartItems.filter(item => item.name === "Purple Daruma");
-    let pink = cartItems.filter(item => item.name === "Pink Daruma");
-    let gold = cartItems.filter(item => item.name === "Gold Daruma");
-
-    let redTotal = red.reduce((sum, amount) => sum + amount.quantity, 0);
-      // we now have to create a new object with quantity = redTotal. -
-      // then re add to shooping cart? .... > or just do this every time cart is displayed ?? 
-      // re code to make add modify cart directly ... ?? 
-  }; */
-
-  function cartCheck () { // test code remove on polish
-    console.log(cartItems);
-    console.log(cartItems.length); // test code remove on polish
-    console.log(cartItems[0].quantity); // test code remove on polish
   }
 
   return (
@@ -107,8 +82,8 @@ function App() {
       <Nav count={cartCount} />
       <Switch>
         <Route exact path ="/" component={Home} />
-        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart} subtract={subtractFromCart} cart={cartItems} total={totalItems}/>} />
-        <Route exact path="/Shop" render={(props) => <Shop {...props} add={addToCart} check={cartCheck}/>} />
+        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart} subtract={subtractFromCart} cart={cartItems} total={totalItems} buyAlert={buyAlert}/>} />
+        <Route exact path="/Shop" render={(props) => <Shop {...props} add={addToCart}/>} />
       </Switch>
       <Footer />
     </div>

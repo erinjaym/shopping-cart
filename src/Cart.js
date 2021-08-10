@@ -1,12 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import Table from "./Table";
 
 const Cart = (props) => {
-    const [cartItems, setCartItemsList] = useState (props.cart);
 
     return (
-        <Table cart={cartItems} total={props.total} add={props.add} subtract={props.subtract}/> 
+        <div id="cart-display" className="cart"><center>
+            <Table cart={props.cart} total={props.total} add={props.add} subtract={props.subtract}/> 
+            <button id="buy" className="buy-button" onClick={props.buyAlert}>Purchase Now</button>
+            </center>
+        </div>
     );
 };
 export default Cart;
