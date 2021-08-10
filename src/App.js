@@ -64,8 +64,16 @@ function App() {
     return true;
   }
 
-  function displayCart () {
-    let red2 = cartItems.filter(item => cartItems.name === "Red Daruma");
+
+  function totalItems () {
+    let fullCart = cartItems; 
+    let runningTotal = 0; 
+    console.log("are you running");
+    for (let item = 0; item < fullCart.length; item++){
+      runningTotal += (fullCart[item].quantity) * (fullCart[item].price);
+      console.log(runningTotal);
+    }
+    return runningTotal;
   }
 /*
   function summarizeCart () {
@@ -95,7 +103,7 @@ function App() {
       <Nav count={cartCount} />
       <Switch>
         <Route exact path ="/" component={Home} />
-        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart}/>} />
+        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart} cart={cartItems} total={totalItems}/>} />
         <Route exact path="/Shop" render={(props) => <Shop {...props} add={addToCart} check={cartCheck}/>} />
       </Switch>
       <Footer />
