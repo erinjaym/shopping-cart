@@ -1,8 +1,14 @@
 import react from "react";
+import { useEffect } from "react";
 
-const createTable = (props) => { 
+const Table = (props) => { 
 
-let fullCart = props.cart;
+    let fullCart = props.cart;
+    let toBuy = fullCart.filter(item =>  item.quantity > 0);
+
+useEffect (() => {
+   toBuy = fullCart.filter(item =>  item.quantity > 0);
+});
 
        return (
         <table className="cart-table">
@@ -12,13 +18,17 @@ let fullCart = props.cart;
                 </tr>
             </thead>
             <tbody>
-            {fullCart.map((item, index ) => {
+            {toBuy.map((item, index ) => {
             return (
             <tr key={index}>
-              <td>{item.name}</td>
-              <td><img className="cart-thumbnail" src={item.picture} /> </td>
-              <td>{item.quantity}</td>
-              <td>{item.price}</td>
+                <td>{item.name}</td>
+                <td><img className="cart-thumbnail" src={item.picture} /> </td>
+                <td>
+                  <button onClick={() => props.add(item.name)}>+</button>
+                  {item.quantity}
+                  <button onClick={() => props.subtract(item.name)}>-</button>
+                </td>
+                <td>{item.price}</td>
             </tr>
             );
             })}
@@ -33,4 +43,4 @@ let fullCart = props.cart;
        );
 }
 
-export default createTable;
+export default Table;

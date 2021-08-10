@@ -36,11 +36,15 @@ function App() {
   function findItemAndSubtractQuantity (productName) {
     for (let x = 0; x < cartItems.length; x++ ){
       if(cartItems[x].name === productName){
+        if (cartItems[x].quantity > 0){
         let itemReplacement = cartItems[x];
         itemReplacement.quantity = itemReplacement.quantity - 1;
         cartItems[x] = itemReplacement;
        setCartItems( cartItems );
        console.log(cartItems);
+        }else{
+        alert('nothing to remove');
+        }
       }else {
       }
   }
@@ -103,7 +107,7 @@ function App() {
       <Nav count={cartCount} />
       <Switch>
         <Route exact path ="/" component={Home} />
-        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart} cart={cartItems} total={totalItems}/>} />
+        <Route exact path="/Cart" render={(props) => < Cart {...props} add={addToCart} subtract={subtractFromCart} cart={cartItems} total={totalItems}/>} />
         <Route exact path="/Shop" render={(props) => <Shop {...props} add={addToCart} check={cartCheck}/>} />
       </Switch>
       <Footer />
