@@ -4,10 +4,6 @@ const Table = (props) => {
   let fullCart = props.cart;
   let toBuy = fullCart.filter((item) => item.quantity > 0);
 
-  useEffect(() => {
-    toBuy = fullCart.filter((item) => item.quantity > 0);
-  });
-
   return (
     <table className="cart-table">
       <thead>
