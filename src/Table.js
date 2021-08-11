@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const Table = (props) => {
   let fullCart = props.cart;
   let toBuy = fullCart.filter((item) => item.quantity > 0);
