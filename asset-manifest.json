@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62d05259.chunk.css",
+    "main.js": "/static/js/main.46e852c0.chunk.js",
+    "main.js.map": "/static/js/main.46e852c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d53098c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d53098c.js.map",
+    "static/js/2.404667e9.chunk.js": "/static/js/2.404667e9.chunk.js",
+    "static/js/2.404667e9.chunk.js.map": "/static/js/2.404667e9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.62d05259.chunk.css.map": "/static/css/main.62d05259.chunk.css.map",
+    "static/js/2.404667e9.chunk.js.LICENSE.txt": "/static/js/2.404667e9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/background.cae9d031.jpg",
+    "static/media/blackdaruma.5524a9c0.png": "/static/media/blackdaruma.5524a9c0.png",
+    "static/media/golddaruma.c970400a.png": "/static/media/golddaruma.c970400a.png",
+    "static/media/pinkdaruma.d8613b3c.png": "/static/media/pinkdaruma.d8613b3c.png",
+    "static/media/purpledaruma.192a7821.png": "/static/media/purpledaruma.192a7821.png",
+    "static/media/reddaruma.54665910.jpg": "/static/media/reddaruma.54665910.jpg",
+    "static/media/shoppingcart.46cb7d4b.svg": "/static/media/shoppingcart.46cb7d4b.svg",
+    "static/media/yellowdaruma.a4e7ed0e.png": "/static/media/yellowdaruma.a4e7ed0e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d53098c.js",
+    "static/js/2.404667e9.chunk.js",
+    "static/css/main.62d05259.chunk.css",
+    "static/js/main.46e852c0.chunk.js"
+  ]
+}
