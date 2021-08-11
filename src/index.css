@@ -1,86 +1,97 @@
+a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  list-style: none;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.buy-button {
+  background-color: #009879;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cart {
+  background-color: rgb(208, 221, 226);
+  padding: 5vh;
+  min-height: 85vh;
+}
+
+.cart-table {
+  border-collapse: collapse;
+  font-size: 1.2em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.cart-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cart-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.cart-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #009879;
+  border-right: 1px solid #009879;
+}
+
+.cart-thumbnail {
+  height: 75px;
+  width: 75px;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-nav {
-align-items: center;
-background-color: black;
-color: white;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-min-height: 10vh;
-min-width: auto;
-font-size: 1.5em;
-font-weight: bold;
-}
-
-.nav-links{
-display: flex;
-flex-direction: row;
-}
-
-.nav-link{
-padding-right: 20px;
-}
-
-.nav-link:hover{
-  padding-right: 20px;
-  text-decoration: underline;
-  }
-
-
-a{
+.footer {
+  align-items: center;
+  background-color: black;
   color: white;
-  list-style: none;
-  text-decoration: none;
-  }
-
-
-a:visited{
-color: white;
-list-style: none;
+  display: grid;
+  font-size: 0.7em;
+  justify-content: center;
+  min-height: 5vh;
 }
-
 
 .homepage {
-background-color: #fffffd;
-background-image: url(./images/background.jpg);
-background-position: center;
-background-size: cover;
-display: flex;
-justify-content: flex-end;
-min-height: 90vh;
-}
-
-.shop {
-align-items: center;
-background-color: rgb(208, 221, 226);
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-justify-content: center;
-padding-bottom: 10vh;
-padding-top: 5vh;
-padding-left: 10vw;
-padding-right: 10vw;
+  background-color: #fffffd;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 90vh;
 }
 
 .item {
-align-items: center;
-display: flex;
-flex-direction: column;
-font-weight: bold;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
 }
 
 .item-button {
@@ -99,33 +110,91 @@ font-weight: bold;
   font-weight: bold;
 }
 
-.footer {
-align-items: center;
-background-color: black;
-color: white;
-display: grid;
-font-size: .7em;
-justify-content: center;
-min-height: 5vh;
-}
-
 .item-image {
   border-radius: 50%;
   height: auto;
   width: 225px;
 }
 
+.logo {
+  font-size: 1.5em;
+  text-shadow: skyblue 3px 3px 5px;
+}
+
+nav {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: space-between;
+  min-height: 10vh;
+  min-width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  padding-right: 20px;
+}
+
+.nav-link:hover {
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+.quantity-button {
+  background-color: rgb(208, 221, 226);
+  border: 1px solid;
+  border-radius: 50%;
+  color: #009879;
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.quantity-button:hover {
+  font-size: 1.2em;
+}
+
+.scrolled {
+  background-color: lightgreen;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s ease-in;
+}
+
+.shop {
+  align-items: center;
+  background-color: rgb(208, 221, 226);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vh;
+}
+
 .shop-now-button {
-background-color: black;
-color: white;
-display: inline-block;
-font-size: 2em;
-height: 50px;
-left: 60vw;
-position: absolute;
-top: 40vh;
-text-align: center;
-width: 200px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-size: 2em;
+  height: 50px;
+  left: 60vw;
+  position: absolute;
+  top: 40vh;
+  text-align: center;
+  width: 200px;
 }
 
 .shop-now-button:hover {
@@ -137,83 +206,10 @@ width: 200px;
   font-weight: bold;
   text-align: center;
   width: 200px;
-  }
+}
 
-  .logo{
-  font-size: 1.5em;
-  text-shadow: skyblue 3px 3px 5px;
-  }
-
-
-  .cart {
-    background-color: rgb(208, 221, 226);
-    padding: 5vh;
-    min-height: 85vh;
-    }
-    
-
-  .cart-thumbnail{
-    height: 75px;
-    width: 75px;
-  }
-
-  .table-wrapper{
-    display: absolute;
-    top: 1000px;
-    left: 1000px;
-  }
-  
-  .cart-table {
-    border-collapse: collapse;
-    font-size: 1.2em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-  }
-  
-  .cart-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .cart-table th,
-  .content-table td {
-    padding: 12px 15px;
-  }
-  
-  .cart-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-    border-left: 1px solid #009879;
-    border-right: 1px solid #009879;
-  }
-
-  .total {
+.total {
   background-color: #009879;
   color: white;
   font-weight: bold;
-  }
-  
-  .buy-button{
-    background-color: #009879;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  .quantity-button{
-    background-color: rgb(208, 221, 226);
-    border: 1px solid;
-    border-radius: 50%;
-    color: #009879;
-    display: inline-block;
-    font-size: 1em;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-  }
-
-  .quantity-button:hover{
-  font-size: 1.2em;
-  }
+}
