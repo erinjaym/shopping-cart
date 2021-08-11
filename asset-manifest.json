@@ -5,11 +5,11 @@
     "main.js.map": "/static/js/main.46e852c0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d53098c.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d53098c.js.map",
-    "static/js/2.404667e9.chunk.js": "/static/js/2.404667e9.chunk.js",
-    "static/js/2.404667e9.chunk.js.map": "/static/js/2.404667e9.chunk.js.map",
+    "static/js/2.26474354.chunk.js": "/static/js/2.26474354.chunk.js",
+    "static/js/2.26474354.chunk.js.map": "/static/js/2.26474354.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.62d05259.chunk.css.map": "/static/css/main.62d05259.chunk.css.map",
-    "static/js/2.404667e9.chunk.js.LICENSE.txt": "/static/js/2.404667e9.chunk.js.LICENSE.txt",
+    "static/js/2.26474354.chunk.js.LICENSE.txt": "/static/js/2.26474354.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/background.cae9d031.jpg",
     "static/media/blackdaruma.5524a9c0.png": "/static/media/blackdaruma.5524a9c0.png",
     "static/media/golddaruma.c970400a.png": "/static/media/golddaruma.c970400a.png",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4d53098c.js",
-    "static/js/2.404667e9.chunk.js",
+    "static/js/2.26474354.chunk.js",
     "static/css/main.62d05259.chunk.css",
     "static/js/main.46e852c0.chunk.js"
   ]
