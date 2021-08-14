@@ -79,10 +79,10 @@ function App() {
       <div id="mainpage">
         <Nav count={cartCount} />
         <Switch>
-          <Route exact path="/" component={Home} />
+        <Route  exact path="/shopping-cart" component={Home} />
           <Route
             exact
-            path="/Cart"
+            path="/shopping-cart/Cart"
             render={(props) => (
               <Cart
                 {...props}
@@ -96,7 +96,7 @@ function App() {
           />
           <Route
             exact
-            path="/Shop"
+            path="/shopping-cart/Shop"
             render={(props) => <Shop {...props} add={addToCart} />}
           />
         </Switch>

@@ -29,15 +29,15 @@ const Nav = (props) => {
         The Daruma Store
       </div>
       <ul id="links" className="nav-links">
-        <Link to="/">
+        <Link to="/shopping-cart">
           <li className="nav-link">Home</li>
         </Link>
-        <Link to="/Shop">
+        <Link to="/shopping-cart/Shop">
           <li className="nav-link">Shop</li>
         </Link>
 
         <div id="shopping-cart-float" className={navClasses.join(" ")}>
-          <Link to="/Cart">
+          <Link to="/shopping-cart/Cart">
             <li className="nav-link">
               <img alt="shopping cart" src={ShoppingCart}></img>
               {props.count}
