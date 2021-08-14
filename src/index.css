@@ -184,10 +184,12 @@ nav {
   padding-top: 5vh;
 }
 
-.shop-now-button-wrapper {
+.shop-now{
   background-color: black;
   color: white;
+  display: flex;
   height: 50px;
+  justify-content: center;
   left: 60vw;
   position: absolute;
   text-align: center;
@@ -195,22 +197,7 @@ nav {
   width: 200px;
 }
 
-.shop-now-btn{
-  text-align: center;
-  background-color: black;
-  color: white;
-  display: inline-block;
-  text-align: center;
-  font-size: 2em;
-}
-
-.shop-now-btn:hover{
-  background-color: white;
-  color: black;
-}
-
-
-.shop-now-button-wrapper:hover {
+.shop-now:hover {
   background-color: white;
   border: 2px black solid;
   color: black;
