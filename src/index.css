@@ -175,6 +175,7 @@ nav {
   align-items: center;
   background-color: rgb(208, 221, 226);
   display: grid;
+  min-height: 85vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
