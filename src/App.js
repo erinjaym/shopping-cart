@@ -33,7 +33,6 @@ function App() {
           itemReplacement.quantity = itemReplacement.quantity - 1;
           cartItems[item] = itemReplacement;
           setCartItems(cartItems);
-          console.log(cartItems);
         } else {
           alert("nothing to remove");
         }
