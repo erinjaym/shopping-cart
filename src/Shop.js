@@ -14,10 +14,7 @@ const Shop = (props) => {
                 <img className="item-image" alt="red daruma doll" src={RedDaruma} /> 
                 <div id="description"> Red Daruma for luck!</div>
                 <div id="price"> $12.99</div>
-                <button className="item-button" 
-                onClick={() => { props.add("Red Daruma") }
-                }
-                 >Add To cart</button>
+                <button className="item-button" onClick={() => { props.add("Red Daruma") }}>Add to cart</button>
             </div>
             <div className="item">
                 <img className="item-image"  alt="black daruma doll" src={BlackDaruma} /> 
@@ -51,7 +48,7 @@ const Shop = (props) => {
                 <img className="item-image"  alt="gold daruma doll" src={GoldDaruma} /> 
                 <div id="description"> Gold Daruma!</div>
                 <div id="price"> $19.99</div>
-                <button className="item-button" onClick={() => props.add("Gold Daruma")}>Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Gold Daruma")}>Add to cart</button>
             </div>
         </div>
     );
