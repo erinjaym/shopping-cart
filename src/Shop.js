@@ -23,28 +23,28 @@ const Shop = (props) => {
                 <img className="item-image"  alt="black daruma doll" src={BlackDaruma} /> 
                 <div id="description"> Black Daruma!</div>
                 <div id="price"> $15.99</div>
-                <button className="item-button" onClick={() => props.add("Black Daruma")}>Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Black Daruma")}>Add to cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image"  alt="yellow daruma doll" src={YellowDaruma} /> 
                 <div id="description"> Yellow Daruma!</div>
                 <div id="price"> $15.99</div>
-                <button className="item-button" onClick={() => props.add("Yellow Daruma")}>Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Yellow Daruma")}>Add to cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image"  alt="purple daruma doll" src={PurpleDaruma} /> 
                 <div id="description"> Purple Daruma!</div>
                 <div id="price"> $18.99</div>
-                <button className="item-button" onClick={() => props.add("Purple Daruma")}>Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Purple Daruma")}>Add to cart</button>
             </div>
 
             <div className="item">
                 <img className="item-image"  alt="pink daruma doll" src={PinkDaruma} /> 
                 <div id="description"> Pink Daruma!</div>
                 <div id="price"> $13.99</div>
-                <button className="item-button" onClick={() => props.add("Pink Daruma")}>Add To cart</button>
+                <button className="item-button" onClick={() => props.add("Pink Daruma")}>Add to cart</button>
             </div>
 
             <div className="item">
